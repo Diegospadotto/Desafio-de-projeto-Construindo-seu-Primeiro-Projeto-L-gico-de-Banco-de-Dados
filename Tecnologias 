@@ -1,0 +1,5 @@
+Tecnologias
+•	Backend: Node.js com Express
+•	Banco de Dados: SQLite (por simplicidade)
+•	Frontend: HTML/CSS/JS
+•	Testes: Jest para testes unitários
