@@ -1,0 +1,38 @@
+const tasks = [];
+
+class Task {
+  constructor(title, description) {
+    this.id = tasks.length + 1;
+    this.title = title;
+    this.description = description;
+    this.status = 'pendente';
+  }
+
+  static addTask(title, description) {
+    const task = new Task(title, description);
+    tasks.push(task);
+    return task;
+  }
+
+  static getTasks() {
+    return tasks;
+  }
+
+  static editTask(id, title, description) {
+    const task = tasks.find(t => t.id === id);
+    if (task) {
+      task.title = title;
+      task.description = description;
+    }
+    return task;
+  }
+
+  static deleteTask(id) {
+    const index = tasks.findIndex(t => t.id === id);
+    if (index !== -1) {
+      tasks.splice(index, 1);
+    }
+  }
+}
+
+module.exports = Task;
