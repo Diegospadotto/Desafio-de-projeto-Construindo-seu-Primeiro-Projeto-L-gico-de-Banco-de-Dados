@@ -1,0 +1,18 @@
+/task-manager
+  /src
+    /controllers
+      taskController.js
+    /models
+      taskModel.js
+    /views
+      index.html
+    /services
+      databaseService.js
+  /tests
+    taskModel.test.js
+    taskController.test.js
+  /public
+    /css
+    /js
+  /docs
+    README.md
